@@ -35,7 +35,7 @@ const eslintConfig = tseslint.config(
   ...nextTsPatched,
   prettier,
   tseslint.configs.strict,
-  tseslint.configs.stylistic,
+  tseslint.configs.stylistic
 );
 
 export default eslintConfig;

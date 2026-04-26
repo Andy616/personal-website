@@ -22,10 +22,12 @@ const TextBox: FC<TextBoxProps> = memo(function TextBox({
   return (
     <Box
       className={className}
-      border={1}
-      borderColor="text.secondary"
-      borderRadius={(theme.shape.borderRadius as number) * 4}
-      sx={{ p: 2 }}
+      sx={{
+        p: 2,
+        border: 1,
+        borderColor: 'text.secondary',
+        borderRadius: (theme.shape.borderRadius as number) * 4,
+      }}
     >
       <Typography
         component={component}

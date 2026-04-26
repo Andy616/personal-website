@@ -14,7 +14,7 @@ const About: FC = memo(function About() {
     <Section sectionId={SectionId.About}>
       <Container fixed sx={{ mt: 8, px: 0 }}>
         <Grid container sx={{ justifyContent: 'center' }}>
-          <Grid size={{ xs: 12, md: 3 }} alignContent="center">
+          <Grid size={{ xs: 12, md: 3 }} sx={{ alignContent: 'center' }}>
             <Avatar
               alt="profile picture"
               src={profileImageSrc}
@@ -33,10 +33,10 @@ const About: FC = memo(function About() {
               flexDirection: 'column',
             }}
           >
-            <Typography component={'h3'} variant={'h3'} textAlign={'center'}>
+            <Typography component={'h3'} variant={'h3'} align={'center'}>
               {"I'm Andy Kuo,"}
             </Typography>
-            <Typography component={'h4'} variant={'h4'} textAlign={'center'}>
+            <Typography component={'h4'} variant={'h4'} align={'center'}>
               {'a software engineer.'}
             </Typography>
           </Grid>
