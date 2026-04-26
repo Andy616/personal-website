@@ -33,7 +33,11 @@ const Contact: FC = memo(function Contact() {
 
         <Grid container spacing={4}>
           {SocialLinks.map((social, idx) => (
-            <Grid key={idx} size={{ xs: 12, sm: 4 }} sx={{ textAlign: 'center' }}>
+            <Grid
+              key={idx}
+              size={{ xs: 12, sm: 4 }}
+              sx={{ textAlign: 'center' }}
+            >
               <IconButton
                 aria-label={social.label}
                 href={social.href}

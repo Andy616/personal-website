@@ -36,7 +36,11 @@ const Education: FC = memo(function Education() {
                 {start_date.getFullYear()} ~{' '}
                 {end_date ? end_date.getFullYear() : 'Present'}
               </Typography>
-              <Typography component="div" variant="h6" sx={{ fontWeight: 'bold' }}>
+              <Typography
+                component="div"
+                variant="h6"
+                sx={{ fontWeight: 'bold' }}
+              >
                 {location}
               </Typography>
               <Typography component="div" sx={{ color: 'text.secondary' }}>
