@@ -17,8 +17,7 @@ const Education: FC = memo(function Education() {
           <Grid key={idx} container size={{ xs: 12, sm: 6 }} sx={{ my: 4 }}>
             <Grid
               size={{ xs: 12, sm: 3 }}
-              display="flex"
-              justifyContent="center"
+              sx={{ display: 'flex', justifyContent: 'center' }}
             >
               <Avatar
                 alt={`${location} logo`}
@@ -37,7 +36,7 @@ const Education: FC = memo(function Education() {
                 {start_date.getFullYear()} ~{' '}
                 {end_date ? end_date.getFullYear() : 'Present'}
               </Typography>
-              <Typography component="div" variant="h6" fontWeight="bold">
+              <Typography component="div" variant="h6" sx={{ fontWeight: 'bold' }}>
                 {location}
               </Typography>
               <Typography component="div" sx={{ color: 'text.secondary' }}>

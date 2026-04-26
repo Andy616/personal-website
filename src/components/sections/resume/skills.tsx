@@ -66,7 +66,7 @@ const SkillGroup: FC<{ skillGroup: SkillGroupType }> = memo(
           <Typography
             component="div"
             variant="h6"
-            textAlign="center"
+            align="center"
             sx={{ pb: 2 }}
           >
             {skillGroup.name}

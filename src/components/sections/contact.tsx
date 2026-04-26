@@ -27,13 +27,13 @@ const Contact: FC = memo(function Contact() {
           }}
         />
 
-        <Typography sx={{ mx: 4, my: 4 }} textAlign="center">
+        <Typography sx={{ mx: 4, my: 4, textAlign: 'center' }}>
           {ContactWordings}
         </Typography>
 
         <Grid container spacing={4}>
           {SocialLinks.map((social, idx) => (
-            <Grid key={idx} size={{ xs: 12, sm: 4 }} textAlign={'center'}>
+            <Grid key={idx} size={{ xs: 12, sm: 4 }} sx={{ textAlign: 'center' }}>
               <IconButton
                 aria-label={social.label}
                 href={social.href}
@@ -80,7 +80,7 @@ const Contact: FC = memo(function Contact() {
           ))}
         </Grid>
 
-        <Box sx={{ my: 4, mx: isMobile ? 0 : 8 }} height={isMobile ? 300 : 450}>
+        <Box sx={{ my: 4, mx: isMobile ? 0 : 8, height: isMobile ? 300 : 450 }}>
           <Globe />
         </Box>
       </Container>
