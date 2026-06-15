@@ -106,8 +106,15 @@ export const Education: TimelineData[] = [
 
 export const WorkExperience: TimelineData[] = [
   {
-    start_date: new Date(2025, 5),
+    start_date: new Date(2026, 5),
     end_date: undefined,
+    location: 'Dell Technologies',
+    title: 'Software Senior Engineer',
+    content: '',
+  },
+  {
+    start_date: new Date(2025, 5),
+    end_date: new Date(2026, 4),
     location: 'GUMHK',
     title: 'Senior Backend Engineer',
     content: (
